@@ -11,7 +11,7 @@
         
         var x = ch.toString();
         var x = ch.toLowerCase();
-        alert(x)
+        
         if ((x == "a" || x == "b" || x == "c" || x == "d" || x == "e" || x == "f" || x == "g" || x == "h" || x == "i" || x == "n" || x == "v" || x == "w" || x == "j" || x == "o" || x == "u" || x == "x" || x == "k" || x == "p" || x == "t" || x == "y" || x == "l" || x == "q" || x == "s" || x == "z" || x == "m" || x == "r"))
             return true;
         else
@@ -106,7 +106,7 @@
     var randLet = randomLetter()
     var repeatedLetter = function(x,y)
     {
-        var userLetter = x;
+        var userLetter = x.toLowerCase();
         for (var i = 0; i < y.length; i++)
         {
             if (y[i] == userLetter){
@@ -121,7 +121,7 @@
     document.onkeyup = function (event) {
 
         var userguess = event.key;
-        if (isAlpha(userguess) && repeatedLetter(userguess,prevLetters) == false) {
+        if (isAlpha(userguess) && !repeatedLetter(userguess,prevLetters)) {
             prevLetters.push(1)
             
             userguess = userguess.toString()
@@ -136,7 +136,8 @@
              else{
                  if(guessCounter > 1){
                      prevGuessList += userguess + " ";
-                     prevLetters.push(userguess.toString());
+                     userguess = userguess.toString()
+                     prevLetters.push(userguess.toLowerCase());
                      guessCounter--;
                  }
                  
