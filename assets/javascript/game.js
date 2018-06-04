@@ -9,8 +9,8 @@
 
     var isAlpha = function (ch) {
         alert("js page working")
-        ch.toString();
-        ch.toLowerCase();
+        ch = ch.toString();
+        ch = ch.toLowerCase();
         if ((ch == "a" || ch == "b" || ch == "c" || ch == "d" || ch == "e" || ch == "f" || ch == "g" || ch == "h" || ch == "i" || ch == "n" || ch == "v" || ch == "w" || ch == "j" || ch == "o" || ch == "u" || ch == "x" || ch == "k" || ch == "p" || ch == "t" || ch == "y" || ch == "l" || ch == "q" || ch == "s" || ch == "z" || ch == "m" || ch == "r"))
             return true;
         else
