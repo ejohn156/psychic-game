@@ -8,10 +8,11 @@
     var prevLetters = [];
 
     var isAlpha = function (ch) {
-        alert("js page working")
-        ch = ch.toString();
-        ch = ch.toLowerCase();
-        if ((ch == "a" || ch == "b" || ch == "c" || ch == "d" || ch == "e" || ch == "f" || ch == "g" || ch == "h" || ch == "i" || ch == "n" || ch == "v" || ch == "w" || ch == "j" || ch == "o" || ch == "u" || ch == "x" || ch == "k" || ch == "p" || ch == "t" || ch == "y" || ch == "l" || ch == "q" || ch == "s" || ch == "z" || ch == "m" || ch == "r"))
+        
+        var x = ch.toString();
+        var x = ch.toLowerCase();
+        alert(x)
+        if ((x == "a" || x == "b" || x == "c" || x == "d" || x == "e" || x == "f" || x == "g" || x == "h" || x == "i" || x == "n" || x == "v" || x == "w" || x == "j" || x == "o" || x == "u" || x == "x" || x == "k" || x == "p" || x == "t" || x == "y" || x == "l" || x == "q" || x == "s" || x == "z" || x == "m" || x == "r"))
             return true;
         else
             return false;
